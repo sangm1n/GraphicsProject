@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		body {
-			margin: 0;
-		}
-		canvas {
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+	<title>Solar System</title>
+	<link rel="stylesheet" href="galaxy.css">
 </head>
-<body id="scene">
-	<script src="three.js-master/build/three.js"></script>
-	<script src="three.js-master/examples/js/controls/OrbitControls.js"></script>
+<body>
+	<button id="revolution" onclick="revolution()">Rotate</button>
+	<button id="stop" onclick="stop()">Stop</button>
+
+	<button id="sun" onclick="sun()">Sun</button>
+	<button id="mercury" onclick="mercury()">Mercury</button>
+	<button id="venus" onclick="venus()">Venus</button>
+	<button id="earth" onclick="earth()">Earth</button>
+	<button id="mars" onclick="mars()">Mars</button>
+	<button id="jupiter" onclick="jupiter()">Jupiter</button>
+	<button id="saturn" onclick="saturn()">Saturn</button>
+	<button id="uranus" onclick="uranus()">Uranus</button>
+	<button id="neptune" onclick="neptune()">Neptune</button>
+
+	<button id="view" onclick="view()">View</button>
+	<button id="stop2" onclick="stop2()">Stop</button>
+
+	<script src="three.js"></script>
+	<script src="OrbitControls.js"></script>
+
 	<script src="planet.js"></script>
 	<script src="main.js"></script>
+	<script src="viewpoint.js"></script>
+	<script src="orbit.js"></script>
+	<script src="rotate.js"></script>
 </body>
 </html>
